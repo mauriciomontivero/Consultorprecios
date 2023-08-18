@@ -10,7 +10,7 @@
     <script src="./qrScript.js"></script>
     <div style="text-align: center;">
 
-        <div id="reader" style="width: 250px;"></div>
+        <div id="reader" style="width: 50%;"></div>
         <div id="show" style="display: none;">
             <h4>Scanned Result</h4>
             <p style="color: blue;" id="result"></p>
@@ -25,7 +25,7 @@
                 html5Qrcode.stop();
             }
         }
-        const config = {fps:10, qrbox:{width:250, height:250}}
+        const config = {fps:10, qrbox:{width:100, height:100}}
         html5Qrcode.start({facingMode:"environment"}, config,qrCodeSuccessCallback );
     </script>
     
