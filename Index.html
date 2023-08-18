@@ -19,13 +19,22 @@
         <div id="show" style="display: none;">
             <h4>Scanned Result</h4>
             <p style="color: blue;" id="result"></p>
+
+<!-- ## Prueba para meter el codigo en buscador ------------------------------------------------ -->
+<form id="search-form" class="form-inline" onsubmit="handleFormSubmit(this)">
+	<div class="form-group mb-2">
+	<label for="searchtext">Codigo: </label>
+      	</div>
+        
+	<div class="form-group mx-sm-3 mb-2">         
+	<input type="text" class="form-control" id="searchtext" name="searchtext" placeholder="Ingrese su codigo">
+    	</div>
+        <button type="submit" class="btn btn-primary mb-2">Escanear</button>
+            
+</form>
+
         </div>
 
-<div id="prueba">
-	<h3>El codigo encontrado es:</h3>
-	<p style="color: red;" id="result"></p>
-
-    </div>
     <script>
         const html5Qrcode = new Html5Qrcode('reader');
         const qrCodeSuccessCallback = (decodedText, decodedResult)=>{
